@@ -21,7 +21,7 @@ url_suffix = args.url_suffix
 
 tasks = []
 
-prompt = """In the the given image, tell me which letter is highlighted using the red oval?"""
+prompt = """Which letter is being circled?"""
 
 for index, row in tqdm(df.iterrows()):
     image_url = f"{url_suffix}/{os.path.basename(row['image_path'])}"
