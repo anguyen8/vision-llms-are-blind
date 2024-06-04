@@ -36,7 +36,9 @@ generation_config = {
 }
 
 # Set directories
-parent_folder = '/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task4/images'
+parent_folder = (
+    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task4/nested_squares"
+)
 
 # Get video files recursively
 video_files = []
@@ -50,6 +52,7 @@ print(f"Found {len(video_files)} video files.")
 
 # shuffle the videos
 import random
+
 random.shuffle(video_files)
 
 # Rate limiting setup
