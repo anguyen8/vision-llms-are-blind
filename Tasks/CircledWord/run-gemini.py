@@ -36,7 +36,9 @@ generation_config = {
 }
 
 # Set directories
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task2/generated_images_main-text/tHyUiKaRbNqWeOpXcZvM"
+parent_folder = (
+    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
+)
 
 # Get video files recursively
 video_files = []

@@ -37,7 +37,7 @@ generation_config = {
 
 # Set directories
 parent_folder = (
-    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task4/nested_squares"
+    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/NestedSquares/images"
 )
 
 # Get video files recursively

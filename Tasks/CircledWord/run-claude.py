@@ -9,7 +9,9 @@ client = Anthropic()
 MODEL_NAME = "claude-3-sonnet-20240229"
 
 # Set directories
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task2/generated_images_main-text/Acknowledgement"
+parent_folder = (
+    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
+)
 
 
 # Get image files recursively

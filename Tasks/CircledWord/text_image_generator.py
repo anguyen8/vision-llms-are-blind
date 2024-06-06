@@ -115,6 +115,11 @@ def create_text_image(
         # Generate a unique high-resolution filename
         high_res_image_path = f"./tmp/ultra_high_res_text_{uuid.uuid4()}.png"
         fig.savefig(high_res_image_path, dpi=1200, bbox_inches="tight", pad_inches=0)
+
+        # save pdf
+        # pdf_path = f"./tmp/text_{uuid.uuid4()}.pdf"
+        # fig.savefig(pdf_path, dpi=1200, bbox_inches="tight", pad_inches=0)
+        # # close the figure
         plt.close(fig)
 
         # Open the high-resolution image, apply blur

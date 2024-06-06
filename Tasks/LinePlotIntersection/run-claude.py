@@ -9,7 +9,7 @@ client = Anthropic()
 MODEL_NAME = "claude-3-sonnet-20240229"
 
 # Set directories
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/Task3/generated_images_varied_thickness"
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
 
 # Get image files recursively
 image_files = []
