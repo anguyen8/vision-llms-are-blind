@@ -10,6 +10,7 @@ MODEL_NAME = "claude-3-sonnet-20240229"
 
 # Set directories
 parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
 
 # Get image files recursively
 image_files = []
@@ -56,11 +57,12 @@ for image_path in tqdm(image_files, desc="Processing Images"):
                     },
                     {
                         "type": "text",
-                        "text": "How many line intersections are there in the image?",
+                        "text": "How many times do the blue and red lines intersect?",
                     },
                 ],
             }
         ]
+        # "text": "How many line intersections are there in the image?",
 
         # Send the message to Claude
         response = client.messages.create(

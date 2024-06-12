@@ -9,9 +9,10 @@ client = Anthropic()
 MODEL_NAME = "claude-3-sonnet-20240229"
 
 # Set directories
-parent_folder = (
-    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
-)
+# parent_folder = (
+# "/Volumes/ThirdH÷eart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
+# )
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images_second_prompt"
 
 
 # Get image files recursively
@@ -57,10 +58,15 @@ for image_path in tqdm(image_files, desc="Processing Images"):
                             "data": base64_string,
                         },
                     },
-                    {"type": "text", "text": "Which letter is being circled?"},
+                    {
+                        "type": "text",
+                        "text": "Which character is being highlighted with a red oval?",
+                    },
                 ],
             }
         ]
+
+        # {"type": "text", "text": "Which letter is being circled?"},
 
         # Send the message to Claude
         response = client.messages.create(

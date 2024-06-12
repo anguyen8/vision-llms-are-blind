@@ -36,9 +36,7 @@ generation_config = {
 }
 
 # Set directories
-parent_folder = (
-    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
-)
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images_second_prompt"
 
 # Get video files recursively
 video_files = []
@@ -91,7 +89,8 @@ for image_path in tqdm(video_files, desc="Processing Videos"):
         print(f"Video processing complete: {video_file.uri}")
 
         # Set prompt for the model
-        prompt = "Which letter is being circled?"
+        # prompt = "Which letter is being circled?"
+        prompt = "Which character is being highlighted with a red oval?"
 
         model = genai.GenerativeModel(
             model_name="gemini-1.5-pro-latest",

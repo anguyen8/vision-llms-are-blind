@@ -37,6 +37,7 @@ generation_config = {
 
 # Set directories
 parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
 
 # Get video files recursively
 video_files = []
@@ -89,7 +90,8 @@ for image_path in tqdm(video_files, desc="Processing Videos"):
         print(f"Video processing complete: {video_file.uri}")
 
         # Set prompt for the model
-        prompt = "How many line intersections are there in the image?"
+        # prompt = "How many line intersections are there in the image?"
+        prompt = "How many times do the blue and red lines intersect?"
 
         model = genai.GenerativeModel(
             model_name="gemini-1.5-pro-latest",
