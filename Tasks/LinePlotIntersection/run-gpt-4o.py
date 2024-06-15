@@ -5,14 +5,26 @@ import argparse
 
 # Set up argument parsing
 parser = argparse.ArgumentParser(description="Generate batch tasks for GPT-4o model.")
-parser.add_argument("--config_json", type=str, required=True, help="Path to the configuration JSON file.")
-parser.add_argument("--url_suffix", type=str, required=True, help="URL suffix for image paths.")
-parser.add_argument("--output_file", type=str, required=True, help="Output file name for the batch data.")
+parser.add_argument(
+    "--config_json",
+    type=str,
+    required=True,
+    help="Path to the configuration JSON file.",
+)
+parser.add_argument(
+    "--url_suffix", type=str, required=True, help="URL suffix for image paths."
+)
+parser.add_argument(
+    "--output_file",
+    type=str,
+    required=True,
+    help="Output file name for the batch data.",
+)
 
 args = parser.parse_args()
 
 # Load JSON data
-with open(args.config_json, 'r') as file:
+with open(args.config_json, "r") as file:
     data = json.load(file)
 
 url_suffix = args.url_suffix
