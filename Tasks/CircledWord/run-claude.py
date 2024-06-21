@@ -13,7 +13,10 @@ MODEL_NAME = "claude-3-5-sonnet-20240620"
 # parent_folder = (
 # "/Volumes/ThirdH÷eart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
 # )
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images_second_prompt"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images_second_prompt"
+parent_folder = (
+    "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/CircledWord/images"
+)
 
 
 # Get image files recursively
@@ -61,13 +64,14 @@ for image_path in tqdm(image_files, desc="Processing Images"):
                     },
                     {
                         "type": "text",
-                        "text": "Which character is being highlighted with a red oval?",
+                        "text": "Which letter is being circled?",
                     },
                 ],
             }
         ]
 
         # {"type": "text", "text": "Which letter is being circled?"},
+        # "Which character is being highlighted with a red oval?",
 
         # Send the message to Claude
         response = client.messages.create(
