@@ -7,6 +7,7 @@ from tqdm import tqdm
 # Configure API
 client = Anthropic()
 MODEL_NAME = "claude-3-sonnet-20240229"
+MODEL_NAME = "claude-3-5-sonnet-20240620"
 
 # Set directories
 parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
@@ -58,14 +59,14 @@ for image_path in tqdm(image_files, desc="Processing Images"):
                     },
                     {
                         "type": "text",
-                        "text": "How many times do the blue and red line plots cross each other?",
+                        "text": "How many times do the blue and red line plots cross each other?",  # How many times do the blue and red lines intersect?",
                     },
                 ],
             }
         ]
         # "text": "How many line intersections are there in the image?",
         # "How many times do the blue and red lines intersect?",
-
+        # "How many times do the blue and red line plots cross each other?",
         # Send the message to Claude
         response = client.messages.create(
             model=MODEL_NAME, max_tokens=2048, messages=message_list

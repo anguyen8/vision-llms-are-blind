@@ -6,7 +6,8 @@ from tqdm import tqdm
 
 # Configure API
 client = Anthropic()
-MODEL_NAME = "claude-3-sonnet-20240229"
+# MODEL_NAME = "claude-3-sonnet-20240229"
+MODEL_NAME = "claude-3-5-sonnet-20240620"
 
 # Set directories
 parent_folder = (
