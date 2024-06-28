@@ -31,7 +31,8 @@ url_suffix = args.url_suffix
 
 tasks = []
 
-prompt = "How many line intersections are there in the image?"
+prompt = "How many times do the blue and red line plots cross each other?"
+prompt = "How many times do the blue and red lines intersect?"
 
 # Iterate over each image configuration
 for image_name, image_info in tqdm(data.items()):

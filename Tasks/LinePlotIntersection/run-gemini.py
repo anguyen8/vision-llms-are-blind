@@ -36,9 +36,15 @@ generation_config = {
 }
 
 # Set directories
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_third_prompt"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_third_prompt"
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_detailed_p2"
+
+
+prompt1 = "How many times do the blue and red line plots cross each other?"
+prompt2 = "How many times do the blue and red lines intersect?"
+
 
 # Get video files recursively
 video_files = []
@@ -93,7 +99,7 @@ for image_path in tqdm(video_files, desc="Processing Videos"):
         # Set prompt for the model
         # prompt = "How many line intersections are there in the image?"
         # prompt = "How many times do the blue and red lines intersect?"
-        prompt = "How many times do the blue and red line plots cross each other?"
+        prompt = prompt2
 
         model = genai.GenerativeModel(
             model_name="gemini-1.5-pro-latest",

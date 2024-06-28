@@ -6,13 +6,19 @@ from tqdm import tqdm
 
 # Configure API
 client = Anthropic()
-MODEL_NAME = "claude-3-sonnet-20240229"
 MODEL_NAME = "claude-3-5-sonnet-20240620"
+MODEL_NAME = "claude-3-sonnet-20240229"
 
 # Set directories
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
-parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_third_prompt"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_second_prompt"
+# parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_third_prompt"
+
+parent_folder = "/Volumes/ThirdHeart/Github-Y/vision-llms-are-blind/Tasks/LinePlotIntersection/images_detailed_p1"
+
+prompt1 = "How many times do the blue and red line plots cross each other?"
+prompt2 = "How many times do the blue and red lines intersect?"
+
 
 # Get image files recursively
 image_files = []
@@ -57,10 +63,7 @@ for image_path in tqdm(image_files, desc="Processing Images"):
                             "data": base64_string,
                         },
                     },
-                    {
-                        "type": "text",
-                        "text": "How many times do the blue and red line plots cross each other?",  # How many times do the blue and red lines intersect?",
-                    },
+                    {"type": "text", "text": prompt1},
                 ],
             }
         ]
