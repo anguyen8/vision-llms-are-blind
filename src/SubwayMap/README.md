@@ -1,6 +1,11 @@
 # Task 7: Following color-coded paths
 
 
+### Image generation
+
+`SubwayMap.ipynb`: notebook contains the scripts to generate images with subway-like maps.
+
+
 ### Examples
 
 <div style="display: flex; flex-direction: row;">
