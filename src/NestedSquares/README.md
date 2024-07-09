@@ -2,7 +2,7 @@
 
 ### Image generation
 
-`GenerateSamples.ipynb`: notebook contains scripts to generate images of circled letters.
+`GenerateSamples.ipynb`: notebook contains scripts to generate images of nested squares.
 
 
 ### Examples
