@@ -3,6 +3,10 @@
 
 ## Counting overlapping circles
 
+### Image generation
+
+`OlympicCircles.ipynb`: notebook contains scripts to generate images of 5 to 9 circles that overlap partially.
+
 ### Examples
 
 <div style="display: flex; flex-direction: row;">
@@ -15,6 +19,10 @@
 
 
 ## Counting overlapping pentagons
+
+### Image generation
+
+`OlympicPentagons.ipynb`: you can use this notebook to simply replace circles with pentagons.
 
 ### Examples
 
