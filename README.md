@@ -20,13 +20,13 @@ This repository contains the code and data for the paper `Vision Language Models
 
 ## Benchmark Tasks
 
-1. [Tasl 1: Counting Line Intersection](./src/LineIntersection/)
-1. [Tasl 2: Two Circles](./src/TouchingCircle/)
-1. [Tasl 3: Circled Letter](./src/CircledWord/)
-1. [Tasl 4: Counting Circles](./src/CountingCircles/)
-1. [Tasl 5: Counting Nested Squares](./src/NestedSquares/)
-1. [Tasl 6: Counting Rows and Columns](./src/CountingRowsAndColumns/)
-1. [Tasl 7: Following color-coded paths](./src/SubwayMap/)
+1. [Task 1: Counting Line Intersection](./src/LineIntersection/)
+1. [Task 2: Two Circles](./src/TouchingCircle/)
+1. [Task 3: Circled Letter](./src/CircledWord/)
+1. [Task 4: Counting Circles](./src/CountingCircles/)
+1. [Task 5: Counting Nested Squares](./src/NestedSquares/)
+1. [Task 6: Counting Rows and Columns](./src/CountingRowsAndColumns/)
+1. [Task 7: Following color-coded paths](./src/SubwayMap/)
 
 
 
