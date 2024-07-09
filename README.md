@@ -1,5 +1,17 @@
 # Vision Language Models Are Blind
 
+<div align="center">    
+    <p style="font-size: 45px;"> by 
+        Pooyan Rahmanzadehgervi<sup>1,*</sup>, Logan Bolton<sup>1,*</sup>,
+        <a href="https://taesiri.ai">Mohammad Reza Taesiri</a><sup>2</sup>, 
+        <a href="https://anhnguyen.me/research/">Anh Totti Nguyen</a><sup>1</sup>
+    </p>
+    <p>
+        <sup>*</sup>Equal contribution<br>
+        <sup>1</sup>Auburn University, <sup>2</sup>University of Alberta
+    </p>
+</div>
+
 This repository contains the code and data for the paper `Vision Language Models Are Blind`.
 
 ## Abstract
