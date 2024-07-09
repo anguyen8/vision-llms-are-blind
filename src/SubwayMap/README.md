@@ -1,0 +1,1 @@
+# Task 7: Following color-coded paths

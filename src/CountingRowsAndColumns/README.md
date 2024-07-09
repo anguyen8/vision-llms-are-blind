@@ -1,0 +1,1 @@
+# Task 6: Counting the rows and columns of a grid

@@ -1,0 +1,1 @@
+# Task 4: Counting overlapping shapes in an Olympic-like logo
