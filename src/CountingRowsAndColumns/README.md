@@ -1,5 +1,11 @@
 # Task 6: Counting the rows and columns of a grid
 
+
+### Image generation
+
+`Grids.ipynb`: notebook contains scripts to generate images of both empty and text-containing grids.
+
+
 ### Examples
 
 <div style="display: flex; flex-direction: row;">
