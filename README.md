@@ -43,6 +43,10 @@ This repository contains the code and data for the paper `Vision Language Models
 | **Average**   | 48.67  | 69.67          | 64.00      | **77.33**  |
 
 
+
+![vision-llms-are-blind](./Figures/2Dlines-aibox.png)
+
+
 ### Task 2 - Two Circles
 
 
@@ -52,6 +56,9 @@ This repository contains the code and data for the paper `Vision Language Models
 | Overlapping    | 71.27  | **93.30**      | 88.09      | 88.83      |
 | Touching       | 74.10  | 92.26          | 80.95      | **94.49**  |
 | Average        | 72.69  | **92.78**      | 84.52      | 91.66      |
+
+
+![vision-llms-are-blind](./Figures/2Touching-aibox.png)
 
 
 ### Task 3 -  Circled Letter
@@ -64,6 +71,9 @@ This repository contains the code and data for the paper `Vision Language Models
 | **Average**                    | 70.18  | 92.81          | 73.34      | 89.22      |
 
 
+![vision-llms-are-blind](./Figures/Redoval-aibox.png)
+
+
 ### Task 4 & 5 - Counting Circles and Nested Squares
 
 |          | GPT-4o | Gemini-1.5 Pro | Sonnet 3.0 | Sonnet 3.5     |
@@ -72,6 +82,10 @@ This repository contains the code and data for the paper `Vision Language Models
 | Circles  | 42.50  | 20.83          | 31.66      | **44.16**      |
 | Pentagons| 19.16  | 9.16           | 11.66      | **75.83**      |
 
+
+![vision-llms-are-blind](./Figures/Nested-aibox.png)
+
+![vision-llms-are-blind](./Figures/Olympic-aibox.png)
 
 
 ### Task 6 - Counting Rows and Columns
@@ -84,6 +98,9 @@ This repository contains the code and data for the paper `Vision Language Models
 | Average   | 39.58        | 35.79          | 36.17         | 74.26           |
 
 
+![vision-llms-are-blind](./Figures/Grid-aibox.png)
+
+
 ### Task 7 -Following color-coded paths
 
 | Paths  | GPT-4o           | Gemini-1.5 Pro | Sonnet 3.0     | Sonnet 3.5      |
@@ -92,3 +109,6 @@ This repository contains the code and data for the paper `Vision Language Models
 | 2      | 44.37            | 28.75          | 37.18          | **56.25**       |
 | 3      | **36.71**        | 25.78          | 15.42          | 25.39           |
 | Average| 45.89            | 40.01          | 23.78          | **50.18**       |
+
+
+![vision-llms-are-blind](./Figures/Subway-aibox.png)
