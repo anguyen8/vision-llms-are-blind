@@ -2,7 +2,7 @@
 
 <div align="center">    
     <p style="font-size: 45px;"> by 
-        <a href="https://pooyanrg.me">Pooyan Rahmanzadehgervi<sup>1,*</sup>, Logan Bolton<sup>1,*</sup>,
+        <a href="https://pooyanrg.me">Pooyan Rahmanzadehgervi</a><sup>1,*</sup>, Logan Bolton<sup>1,*</sup>,
         <a href="https://taesiri.ai">Mohammad Reza Taesiri</a><sup>2</sup>, 
         <a href="https://anhnguyen.me/research/">Anh Totti Nguyen</a><sup>1</sup>
     </p>
