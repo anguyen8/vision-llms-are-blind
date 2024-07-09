@@ -1,5 +1,9 @@
 # Task 2: Two touching circles
 
+### Image generation
+
+`TwoTouchingCircles.ipynb`: notebook contains scripts to generate images two circles with different rotations and distances from each other.
+
 
 ### Examples
 
