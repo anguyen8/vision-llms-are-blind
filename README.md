@@ -13,7 +13,7 @@
 
     
 [![Website](http://img.shields.io/badge/Website-4b44ce.svg)](https://vlmsareblind.github.io/)
-[![arXiv](https://img.shields.io/badge/arXiv-2407.TBA-b31b1b.svg)](https://arxiv.org/abs/)
+[![arXiv](https://img.shields.io/badge/arXiv-2407.06581-b31b1b.svg)](https://arxiv.org/abs/2407.06581)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-red)](https://huggingface.co/datasets/XAI/vlmsareblind)
     
 </div>
