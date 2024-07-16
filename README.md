@@ -100,9 +100,9 @@ This repository contains the code and data for the paper `Vision Language Models
 
 | Grid type | GPT-4o       | Gemini-1.5 Pro | Sonnet 3.0    | Sonnet 3.5      |
 |-----------|--------------|----------------|---------------|-----------------|
-| Blank     | 26.13        | 25.75          | 25.00         | 59.84           |
-| Text      | **53.03**    | **45.83**      | **47.34**     | **88.68**       |
-| Average   | 39.58        | 35.79          | 36.17         | 74.26           |
+| Blank     | 26.13        | 26.51          | 25.00         | 59.84           |
+| Text      | **53.03**    | **52.27**      | **47.34**     | **88.68**       |
+| Average   | 39.58        | 39.39          | 36.17         | 74.26           |
 
 
 ![vision-llms-are-blind](./Figures/Grid-aibox.png)
