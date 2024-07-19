@@ -25,6 +25,18 @@ This repository contains the code and data for the paper `Vision Language Models
 
 *Large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini-1.5 Pro, are powering countless image-text processing applications and scoring high on existing vision-understanding benchmarks. Yet, we find that VLMs fail on 8 visual tasks that are absurdly easy for humans, such as identifying (a) whether two circles overlap; (b) whether two lines intersect; (c) which letter is being circled in a word; and (d) counting the number of circles in an Olympic-like logo. The shockingly poor performance of four state-of-the-art VLMs suggests their vision is, at best, like that of a person with myopia seeing fine details as blurry, and at worst, like an intelligent person who is blind making educated guesses.*
 
+## How to Reproduce Results
+
+1. Find images in `src/{task}` directory. For example: "https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/TouchingCircle/images/touching-prompt/gpt-4o/incorrect/gpt_touch_pixels_1155_rotation_diagonal_1_diameter_0.14_distance_0.05.png"
+
+2. Locate corresponding prompts in `src/prompts.md`. For example: "Are the two circles touching each other? Answer with Yes/No."
+
+3. Test models using their default API settings or official playground, NOT using their web interface (e.g. use https://platform.openai.com/playground/chat for GPT-4o)
+
+5. Compare your results with our paper, noting that variations may occur due to temperature settings.
+
+**Important**: Using the web interface of the models will result in very different results from our paper. For example, using chatgpt.com versus the official API will cause the model to respond differently
+
 ## Tasks in the BlindTest benchmark
 
 1. [Task 1: Counting Line Intersection](./src/LineIntersection/)
