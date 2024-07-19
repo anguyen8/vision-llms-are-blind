@@ -29,7 +29,7 @@ This repository contains the code and data for the paper `Vision Language Models
 
 1. Find images in `src/{task}` directory. For example: "https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/TouchingCircle/images/touching-prompt/gpt-4o/incorrect/gpt_touch_pixels_1155_rotation_diagonal_1_diameter_0.14_distance_0.05.png"
 
-2. Locate corresponding prompts in `src/prompts.md`. For example: "Are the two circles touching each other? Answer with Yes/No."
+2. Locate corresponding prompts in "https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/prompts.md". For example: "Are the two circles touching each other? Answer with Yes/No."
 
 3. Test models using their default API settings or official playground, NOT using their web interface (e.g. use https://platform.openai.com/playground/chat for GPT-4o)
 
