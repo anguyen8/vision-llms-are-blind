@@ -23,19 +23,20 @@ This repository contains the code and data for the paper `Vision Language Models
 
 ## Abstract
 
-*Large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini-1.5 Pro, are powering countless image-text processing applications and scoring high on existing vision-understanding benchmarks. Yet, we find that VLMs fail on 8 visual tasks that are absurdly easy for humans, such as identifying (a) whether two circles overlap; (b) whether two lines intersect; (c) which letter is being circled in a word; and (d) counting the number of circles in an Olympic-like logo. The shockingly poor performance of four state-of-the-art VLMs suggests their vision is, at best, like that of a person with myopia seeing fine details as blurry, and at worst, like an intelligent person who is blind making educated guesses.*
+*While large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini 1.5 Pro, are powering various image-text applications and scoring high on many vision-understanding benchmarks, we find that they are surprisingly still struggling with low-level vision tasks that are easy to humans. Specifically, on BlindTest, our suite of 7 very simple tasks such as identifying (a) whether two circles overlap; (b) whether two lines intersect; (c) which letter is being circled in a word; and (d) counting circles in an Olympic-like logo, four state-of-the-art VLMs are only 58.12% accurate on average.
+Claude 3.5 Sonnet performs the best at 74.01% accuracy, but this is still far from the human expected accuracy of 100%. Across different image resolutions and line widths, VLMs consistently struggle with tasks that require precise spatial information and recognizing geometric primitives that overlap or are close together. Code and data are available at: https://vlmsareblind.github.io*
 
 ## How to Reproduce Results
 
-1. Find images in `src/{task}` directory. For example: "https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/TouchingCircle/images/touching-prompt/gpt-4o/incorrect/gpt_touch_pixels_1155_rotation_diagonal_1_diameter_0.14_distance_0.05.png"
+1. Find images in `src/{task}` directory. For example: [this image](https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/TouchingCircle/images/touching-prompt/gpt-4o/incorrect/gpt_touch_pixels_1155_rotation_diagonal_1_diameter_0.14_distance_0.05.png) in the [gpt-4o/incorrect folder](https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/TouchingCircle/images/touching-prompt/gpt-4o/incorrect/).
 
-2. Locate corresponding prompts in "https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/prompts.md". For example: "Are the two circles touching each other? Answer with Yes/No."
+2. Locate corresponding prompts in [prompts.md](https://github.com/anguyen8/vision-llms-are-blind/blob/main/src/prompts.md). For example: `Are the two circles touching each other? Answer with Yes/No.`
 
-3. Test models using their default API settings or official playground, NOT using their web interface (e.g. use https://platform.openai.com/playground/chat for GPT-4o)
+3. Input the above input image and prompt to models via default API settings or official playground, NOT using their web interface (e.g. use https://platform.openai.com/playground/chat for GPT-4o)
 
-5. Compare your results with our paper, noting that variations may occur due to temperature settings.
+5. Compare your results with our paper, noting that variations may occur due to the default `temperature = 1` setting.
 
-**Important**: Using the web interface of the models will result in very different results from our paper. For example, using chatgpt.com versus the official API will cause the model to respond differently
+**Important**: Using the web interface (e.g., chatgpt.com) of the models may result in very different results from our paper.
 
 ## Tasks in the BlindTest benchmark
 
