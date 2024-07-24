@@ -13,8 +13,8 @@
 2. How many rows and columns are in the table? Answer with only the numbers in a pair (row, column), e.g., (5,6)
 
 # Line Intersections
-1. How many times do the blue and red line plots cross each other?
-2. How many times do the blue and red lines intersect?
+1. Count the intersection points where the blue and red lines meet. Put your answer in curly brackets, e.g., {2}.
+2. How many times do the blue and red lines touch each other? Answer with a number in curly brackets, e.g., {5}.
 
 # Nested Squares
 1. Count total number of squares in the image. Answer with only the number in numerical format in curly brackets e.g. {3}.
