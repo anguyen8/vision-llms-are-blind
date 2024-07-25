@@ -24,7 +24,7 @@ This repository contains the code and data for the paper `Vision Language Models
 ## Abstract
 
 *While large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini 1.5 Pro, are powering various image-text applications and scoring high on many vision-understanding benchmarks, we find that they are surprisingly still struggling with low-level vision tasks that are easy to humans. Specifically, on BlindTest, our suite of 7 very simple tasks such as identifying (a) whether two circles overlap; (b) whether two lines intersect; (c) which letter is being circled in a word; and (d) counting circles in an Olympic-like logo, four state-of-the-art VLMs are only 58.12% accurate on average.
-Claude 3.5 Sonnet performs the best at 74.01% accuracy, but this is still far from the human expected accuracy of 100%. Across different image resolutions and line widths, VLMs consistently struggle with tasks that require precise spatial information and recognizing geometric primitives that overlap or are close together. Code and data are available at: https://vlmsareblind.github.io*
+Claude 3.5 Sonnet performs the best at 74.94% accuracy, but this is still far from the human expected accuracy of 100%. Across different image resolutions and line widths, VLMs consistently struggle with tasks that require precise spatial information and recognizing geometric primitives that overlap or are close together. Code and data are available at: https://vlmsareblind.github.io*
 
 ## How to Reproduce Results
 
@@ -54,14 +54,7 @@ Claude 3.5 Sonnet performs the best at 74.01% accuracy, but this is still far fr
 
 ### Mean Accuracy - All Tasks
 
-| Model          | Task 1  | Task 2  | Task 3  | Task 4  | Task 5  | Task 6  | Task 7  | Task 8  | Task Mean  |
-|----------------|---------|---------|---------|---------|---------|---------|---------|---------|------------|
-| **Random**     |  33.33  |  50.00  |   5.77  |  20.00  |  20.00  |  25.00  |   4.55  |  33.33  |    24.00   |
-| GPT-4o         |  41.61  |  72.67  |  70.18  |  42.50  |  17.50  |  55.83  |  39.58  |  46.08  |    48.25   |
-| Gemini-1.5 Pro |  66.94  |  92.78  |  92.81  |  87.08  |  19.37  |  80.00  |  39.39  |  36.84  |    64.40   |
-| Sonnet 3.0     |  43.41  |  84.52  |  73.34  |  31.66  |   9.79  |  65.00  |  36.17  |  22.66  |    45.81   |
-| Sonnet 3.5     |  75.36  |  91.66  |  89.22  |  44.16  |  77.29  |  92.08  |  74.26  |  48.04  |    74.01   |
-| **Mean**       |  56.84  |  85.41  |  81.39  |  51.35  |  30.99  |  73.29  |  47.35  |  38.41  |    58.12   |
+![vision-llms-are-blind](./Figures/all_models_blindtest.jpg)
 
 
 <!-- ### Task 1 - Counting Line Intersection
