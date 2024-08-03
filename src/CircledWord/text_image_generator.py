@@ -147,7 +147,7 @@ def create_text_image(
         final_image.save(final_image_path)
 
         # Clean up the high-resolution image
-        os.remove(high_res_image_path)
+        # os.remove(high_res_image_path)
 
         return final_image_path
     except Exception as e:
