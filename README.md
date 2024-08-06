@@ -21,6 +21,13 @@
 
 This repository contains the code and data for the paper `Vision Language Models Are Blind`.
 
+    @article{vlms2024blind,
+      title={Vision language models are blind},
+      author={Rahmanzadehgervi, Pooyan and Bolton, Logan and Taesiri, Mohammad Reza and Nguyen, Anh Totti},
+      journal={arXiv preprint arXiv:2407.06581},
+      year={2024}
+    }
+
 ## Abstract
 
 *While large language models with vision capabilities (VLMs), e.g., GPT-4o and Gemini 1.5 Pro, are powering various image-text applications and scoring high on many vision-understanding benchmarks, we find that they are surprisingly still struggling with low-level vision tasks that are easy to humans. Specifically, on BlindTest, our suite of 7 very simple tasks such as identifying (a) whether two circles overlap; (b) whether two lines intersect; (c) which letter is being circled in a word; and (d) counting circles in an Olympic-like logo, four state-of-the-art VLMs are only 58.12% accurate on average.
